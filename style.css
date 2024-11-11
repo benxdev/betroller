@@ -2,25 +2,25 @@ body {
     background-color: beige;
     font-family: "Afacad Flux", sans-serif;
     padding: 0% 350px 0%;
-    margin: 20px auto 0px;
+    margin: 20px 0px;
     text-align: center;
 }
 
 .list-item {
-    list-style: circle;
+    list-style: none;
     text-decoration: none;
 }
-label {
+.subheading {
     color: #2e3b11;
     font-size: 1.15rem;
     font-weight: 600;
     margin-right: 5px;
 }
 
-#input-form {
+.main-container {
     border: 3px solid darkolivegreen;
     border-radius: 10px;
-    padding: 40px 0px 40px;
+    padding: 30px 0px 20px;
 }
 
 .input-field {
@@ -41,6 +41,17 @@ label {
     font-weight: 900;
     padding-top: 30px;
 }
+.heading-text-2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding-top: 30px;
+} 
+.welcome-msg {
+    color: darkolivegreen;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 30px;
+}
 
 .all-btn {
     background-color: darkolivegreen;
@@ -57,6 +68,9 @@ label {
 .all-btn:active {
     background-color: beige;
     color: darkolivegreen
+}
+.about-app-btn {
+    width: 400px;
 }
 
 .reset-btn {
