@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Potential Winnings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <!-- Button link to redirect back to landing page -->
+    <a href="/main.html">
+        <button class="all-btn main-menu-btn">
+            Main Menu
+        </button>
+    </a>
+
+    <!-- heading message -->
+    <h1 class="heading-text">
+        Insert your values here..
+    </h1>
+ 
+    <!-- Main Form Section -->
+    <div id="input-form">
+        <form action="/betroller.js" method="POST">
+    
+            <div>
+                <input type="reset" class="all-btn reset-btn">
+            </div>
+            <br>
+
+            <div>
+                <label for="start-amount" class="">Starting Amount</label>
+                <input class="input-field" type="number" name="startAmount" id="start-amount" placeholder="1000" min="500" max="100000" required>
+            </div>
+    
+            <br>
+    
+            <div>
+                <label for="rolling-odds" class="">Rolling Odds</label>
+                <input class="input-field" type="number" name="rollingOdds" id="rolling-odds" placeholder="2.0" min="1" max="10" required>
+            </div>
+    
+            <br>
+    
+            <div>
+                <label for="total-bets" class="">Total Bets</label>
+                <input class="input-field" type="number" name="totalBets" id="total-bets" placeholder="5" min="1" max="1000" required>
+            </div>
+    
+            <br>
+    
+            <div>
+                <h1 id="output">
+                 </h1>
+
+                <!-- Output button: to display the result, then disappear -->
+                <button type="submit" id="output-btn" class="all-btn output-btn">
+                    Output
+                </button>
+                <br>
+
+                <!-- Percentage button: to appear after output is displayed -->
+                <button type="submit" id="win-percentage-btn" class="all-btn win-percentage-btn hide">
+                    Show Winning Percentage
+                </button>
+                <br>
+        
+            </div>
+        
+            
+        </form>
+    </div>
+
+
+    <!-- Extra actions to be performed after form submission -->
+    <div class="other-options">
+        <button class="all-btn total-stakes other-option-btn">
+            See Total Stakes
+        </button>
+        <br>
+    
+        <a href="">
+            <button class="all-btn history-btn other-option-btn">
+                View Your History
+            </button>
+        </a>
+        <br>
+    
+        <a href="/main.html">
+            <button class="all-btn main-menu-btn other-option-btn">
+                Back to Main Menu
+            </button>
+        </a>
+
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    background-color: beige;
+    font-family: "Afacad Flux", sans-serif;
+    padding: 0% 350px 0%;
+    margin: 20px auto 0px;
+    text-align: center;
+}
+
+.list-item {
+    list-style: circle;
+    text-decoration: none;
+}
+label {
+    color: #2e3b11;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+#input-form {
+    border: 3px solid darkolivegreen;
+    border-radius: 10px;
+    padding: 40px 0px 40px;
+}
+
+.input-field {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1.15rem;
+    width: 100px;
+}
+
+#output {
+    color: #2e3b11;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.heading-text {
+    color: #2e3b11;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 30px;
+}
+
+.all-btn {
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    color: beige;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+}
+.all-btn:hover {
+    background-color: olive;
+    font-weight: 700;
+}
+.all-btn:active {
+    background-color: beige;
+    color: darkolivegreen
+}
+
+.reset-btn {
+    background-color: olive;
+}
+
+.output-btn {
+    background-color: #2e3b11;
+    margin-top: 10px;
+}
+
+.history-btn {
+    background-color: lightcyan;
+    color: #2e3b11;
+}
+
+.other-option-btn {
+    margin-top: 15px;
+}
+.hide {
+    visibility: hidden;
+}
