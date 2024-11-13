@@ -28,7 +28,7 @@
  
     <!-- Main Form Section -->
     <div id="input-form" class="main-container">
-        <form action="/betroller.js" method="POST">
+        <form action="/betserver.js" method="POST">
     
             <div>
                 <input type="reset" class="all-btn reset-btn">
@@ -36,8 +36,8 @@
             <br>
 
             <div>
-                <label for="start-amount" class="subheading">Starting Amount</label>
-                <input class="input-field" type="number" name="startAmount" id="start-amount" placeholder="1000" min="500" max="100000" required>
+                <label for="starting-amount" class="subheading">Starting Amount</label>
+                <input class="input-field" type="number" name="startingAmount" id="starting-amount" placeholder="1000" min="500" max="100000" required>
             </div>
     
             <br>
@@ -57,7 +57,8 @@
             <br>
     
             <div>
-                <h1 id="output">
+                <h1 id="output" class="hide">
+                    100000
                  </h1>
 
                 <!-- Output button: to display the result, then disappear -->
