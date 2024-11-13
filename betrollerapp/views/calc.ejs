@@ -1,0 +1,94 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    <!-- Button link to redirect back to landing page -->
+    <a href="/main.ejs">
+        <button class="all-btn main-menu-btn">
+            Main Menu
+        </button>
+    </a>
+
+    <!-- heading message -->
+    <h1 class="heading-text">
+        Insert your values here..
+    </h1>
+ 
+    <!-- Main Form Section -->
+    <div id="input-form" class="main-container">
+        <form action="/submit" method="POST">
+    
+            <div>
+                <input type="reset" class="all-btn reset-btn">
+            </div>
+            <br>
+
+            <div>
+                <label for="starting-amount" class="subheading">Starting Amount</label>
+                <input class="input-field" type="number" name="startingAmount" id="starting-amount" placeholder="1000" min="500" max="100000" required>
+            </div>
+    
+            <br>
+    
+            <div>
+                <label for="rolling-odds" class="subheading">Rolling Odds</label>
+                <input class="input-field" type="number" name="rollingOdds" id="rolling-odds" placeholder="2.0" min="1" max="10" required>
+            </div>
+    
+            <br>
+    
+            <div>
+                <label for="total-bets" class="subheading">Total Bets</label>
+                <input class="input-field" type="number" name="totalBets" id="total-bets" placeholder="5" min="1" max="1000" required>
+            </div>
+    
+            <br>
+    
+            <div>
+                <h1 id="output" class="">
+                   
+                </h1>
+
+                <!-- Output button: to display the result, then disappear -->
+                <button type="submit" id="output-btn" class="all-btn output-btn">
+                    Output
+                </button>
+                <br>
+
+                <!-- Percentage button: to appear after output is displayed -->
+                <button type="submit" id="win-percentage-btn" class="all-btn win-percentage-btn hide">
+                    Show Winning Percentage
+                </button>
+                <br>
+        
+            </div>
+        
+            
+        </form>
+    </div>
+
+
+    <!-- Extra actions to be performed after form submission -->
+    <div class="other-options">
+        <button class="all-btn total-stakes other-option-btn">
+            See Total Stakes
+        </button>
+        <br>
+    
+        <a href="">
+            <button class="all-btn history-btn other-option-btn">
+                View Your History
+            </button>
+        </a>
+        <br>
+    
+        <a href="/main.ejs">
+            <button class="all-btn main-menu-btn other-option-btn">
+                Back to Main Menu
+            </button>
+        </a>
+
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
