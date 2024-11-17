@@ -18,27 +18,29 @@
         <form action="/submit" method="POST">
     
             <div>
-                <input type="reset" action="/calc.ejs" class="all-btn reset-btn">
+                <a href="/calc.ejs">
+                    <input type="reset" action="" class="all-btn reset-btn">
+                </a>
             </div>
             <br>
 
             <div>
                 <label for="starting-amount" class="subheading">Starting Amount</label>
-                <input class="input-field" type="number" name="startingAmount" id="starting-amount" placeholder="1000" min="500" max="100000" required>
+                <input class="input-field" type="number" name="startingAmount" id="starting-amount" placeholder="1000" min="500" max="1000000000" required>
             </div>
     
             <br>
     
             <div>
                 <label for="rolling-odds" class="subheading">Rolling Odds</label>
-                <input class="input-field" type="text" name="rollingOdds" id="rolling-odds" placeholder="2.0" min="1" max="10" required>
+                <input class="input-field" type="number" name="rollingOdds" id="rolling-odds" placeholder="2.0" min="1" max="50" required>
             </div>
     
             <br>
     
             <div>
                 <label for="total-bets" class="subheading">Total Bets</label>
-                <input class="input-field" type="number" name="totalBets" id="total-bets" placeholder="5" min="1" max="1000" required>
+                <input class="input-field" type="number" name="totalBets" id="total-bets" placeholder="5" min="1" max="100" required>
             </div>
 
             <br>
@@ -89,6 +91,6 @@
 
     </div>
 
-    <script src="/main.js"></script>
+    <script src="/actions.js"></script>
 </body>
 </html>
